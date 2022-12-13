@@ -11,6 +11,8 @@ const express_fileupload_1 = __importDefault(require("express-fileupload"));
 const usuario_1 = __importDefault(require("./routes/usuario"));
 const post_1 = __importDefault(require("./routes/post"));
 const server = new server_1.default();
+const express = require('express');
+const app = express();
 server.app.use(body_parser_1.default.urlencoded({ extended: true }));
 server.app.use(body_parser_1.default.json());
 server.app.use((0, express_fileupload_1.default)({ useTempFiles: true }));

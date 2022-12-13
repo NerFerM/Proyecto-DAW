@@ -7,6 +7,8 @@ import userRoutes from './routes/usuario';
 import postRoutes from './routes/post';
 
 const server = new Server();
+const express = require('express');
+const app = express();
 
 server.app.use(bodyParser.urlencoded({extended:true}));
 server.app.use(bodyParser.json() );
