@@ -15,7 +15,7 @@ server.app.use(bodyParser.json() );
 
 server.app.use(fileUpload({useTempFiles: true}));
 
-server.app.use(cors({origin: true, credentials: true}));
+// server.app.use(cors({origin: true, credentials: true}));
 
 server.app.use('/user', userRoutes);
 server.app.use('/posts', postRoutes);
