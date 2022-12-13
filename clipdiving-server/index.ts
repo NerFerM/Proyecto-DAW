@@ -18,7 +18,7 @@ server.app.use(cors({origin: true, credentials: true}));
 server.app.use('/user', userRoutes);
 server.app.use('/posts', postRoutes);
 
-mongoose.connect('mongodb+srv://NerFerM:W8zlvLodnZDPk8lk@clipdiving.c2i7ngo.mongodb.net/clipdiving?retryWrites=true&w=majority', (err) => {
+mongoose.connect('mongodb+srv://NerFerM:<password>@clipdiving.c2i7ngo.mongodb.net/clipdiving?retryWrites=true&w=majority', (err) => {
     if (err) throw err;
     console.log('Base de datos funciona');
 });
