@@ -17,7 +17,7 @@ server.app.use((0, express_fileupload_1.default)({ useTempFiles: true }));
 server.app.use((0, cors_1.default)({ origin: true, credentials: true }));
 server.app.use('/user', usuario_1.default);
 server.app.use('/posts', post_1.default);
-mongoose_1.default.connect('mongodb://localhost:27017/clipdiving', (err) => {
+mongoose_1.default.connect('mongodb+srv://NerFerM:W8zlvLodnZDPk8lk@clipdiving.c2i7ngo.mongodb.net/clipdiving?retryWrites=true&w=majority', (err) => {
     if (err)
         throw err;
     console.log('Base de datos funciona');
